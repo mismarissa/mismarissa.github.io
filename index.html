@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VISUAL CONTENT - UX/UI - SOCIAL MEDIA MANAGER </title>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Check out my awesome hand-coded online resume website!"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway|Courgette"  rel="stylesheet"   type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Fira Sans'" rel="stylesheet"   type="text/css" />
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css"
+    />
+
+    <style>
+      a:link,
+      a:visited {
+        color: #609100;
+        text-decoration: none;
+      }
+
+      #career {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0 20px 15px 20px;
+        border-block-start: 5px solid;
+        border-block-end: 5px solid;
+        border-image-source: radial-gradient(circle at center, lime, transparent 95% );
+        border-image-slice: 3;
+        }
+
+      h3 {
+        font-family: Fira Sans;
+        color: #333333;
+        letter-spacing: 0.15em;
+        font-size: 1.2em;
+      }
+
+      h3:before {
+        padding-right: 7px;
+        content: url("images/gold-arrow.png");
+      }
+
+      #work-history p > img {
+        float: left;
+        margin: 2em 2em 4em 0;
+      }
+
+      #work-history p {
+        overflow: auto;
+
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      body {
+        background-color: #00ff00;
+      }
+
+      #main {
+        width: 90%;
+        max-width: 1460px;
+        margin: 44px auto;
+        padding: 44px 4%;
+        color: #666600;
+        background-color: #ffffff;
+        font-family: Raleway;
+        border: #333333 1px solid;
+        border-radius: 33px;
+      }
+
+      h1 {
+        margin: 33px 0;
+        font-family: Fira Sans;
+        text-align: center;
+        color: #333333;
+        font-size: 2em;
+        letter-spacing: 0.2em;
+      }
+
+      h2 {
+        margin: 33px 0;
+        font-family: Fira Sans;
+        text-align: center;
+        color: #333333;
+        font-size: 1.3em;
+        letter-spacing: 0.3em;
+      }
+
+      .flex-row {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        column-gap: 5px;
+        row-gap: 5px;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .flex-row-skills {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        column-gap: 20px;
+        row-gap: 20px;
+        justify-content: space-evenly;
+        align-items: top center;
+        margin-top: 5px;
+        margin-bottom: 50px;
+      }
+
+      .icons-row section {
+        max-width: 300 px;
+        text-align: center;
+        font-size: 90%;
+      }
+
+      .feather {
+        width: 44px;
+        height: 44px;
+        stroke: #007700 ;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
+
+      .gallery-row section {
+        max-width: 350px;
+        text-align: center;
+      }
+
+      #contact-info {list-style-position: outside; text-align:left; list-style-type: none;}
+      
+      #create {
+        width: 85%;
+        margin: 0 auto;
+        padding: 0 20px 15px 20px;
+        border-block-start: 5px solid;
+        border-block-end: 5px solid;
+        border-image-source: radial-gradient(circle at center, lime, transparent 95% );
+        border-image-slice: 3;
+      }
+
+      .container {position:relative; width:auto; height:250px; display:inline-block;}
+
+      .image {display: block; width:auto; height:250px;}
+
+      .overlay {position:absolute; transition:all .3s ease; opacity: 0; background-color: #eee; }
+
+      .container:hover .overlay {opacity: .7; width: 100%;}
+
+      .imgtext { color:white; font-weight: bold; font-family: Raleway ; position: absolute; top: 30%; left: 50%; transform:translate(-50%, -50%); font-size: 1.3em;}
+
+      .imgtext2 { color:rgb(28, 8, 75); font-weight: bold; font-family: Raleway ; position: absolute; top: 65%; left: 50%; transform:translate(-50%, -50%); font-size: 1.3em;} 
+
+      .overlayRight{height:0; width: 100%; top: 0; right: 0; background-color: #00ee00;}
+
+      .container:hover .overlayRight {height: 100%;}
+
+      SPAN.li  {display: list-item; padding-left: -7em ;}
+        
+
+
+
+    </style>
+
+
+
+
+  </head>
+
+  <body>
+    <div id="main">
+      <h1>VISUAL CONTENT - UX/UI - SOCIAL MEDIA MANAGER</h1>
+      <h2>Marissa Carter  - marissa@mismarissa.com</h2>
+
+      <div class="flex-row icons-row">
+        <section>
+          <img
+            src="images/mismarissa-photo-400x428.jpg"
+            style="max-width: 250px; 
+            border-color: #00ff00; 
+            border-radius: 3px;"
+          />
+        </section>
+        <section>
+          <p><i data-feather="camera"></i></p>
+          <p style="word-wrap: normal; max-width: 250px">
+            I am a multi-disciplined creative visual designer, social media manager, and photojournalist with more than 10 years behind the lens. 
+          </p>
+        </section>
+        <section>
+          <p><i data-feather="layout"></i></p>
+          <p style="word-wrap: normal; max-width: 250px">
+            I create responsive websites that are fast, easy to use, and beautiful.  I have up-to-date full stack WebDev skills and enjoy pushing the boundries in design.</p>
+        </section>
+        <section>
+          <p><i data-feather="phone-call"></i></p>
+          <p style="word-wrap: normal; max-width: 250px">
+            Visit my Linkedin profile for more details or contact me here!
+          </p>
+        </section>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+      <script>  feather.replace();       </script>
+
+      <div id="career">
+        <h2>Career Highlights</h2>
+        <ul>
+          <li>
+            Built the <a href="https://www.thriveon.com"  target=" blank" >ThriveOn.com</a>
+            website to client specifications. All server-side code built from scratch using the
+            <a href="https://www.yiiframework.com/" target=" blank" >Yii framework</a> 
+            for PHP. All client-side code built using the  <a href="https://www.reactjs.org/"
+              target=" blank" >React</a> Javascript framework.
+          </li>
+          <li>
+            Loren ipsum dolor sit amet, ei graece
+            neglegentur pro. Mucius labore gubergren pri an,
+            et tota legendos mediocrem sit. Corpora
+            sapientem ea has, no dicunt percipitur vis, vim
+            eu soleat phaedrum splendide. In usu clita
+            essent blandit.
+          </li>
+          <li>
+            lorem ipsum dolor sit amet, ei graece
+            neglegentur pro. Mucius labore gubergren pri an,
+            et tota legendos mediocrem sit. Corpora
+            sapientem ea has, no dicunt percipitur vis, vim
+            eu soleat phaedrum splendide. In usu clita
+            essent blandit.
+          </li>
+          <li>As a Photographer/ Entertainment PhotoJournalist, I have covered red carpets, live music, and other events for Zuma Press, National Geographic Channels, Live Nation, AXS, FOX Fan Fare, FX, NBC Soundiego, and many smaller outlets.</li>
+        </ul>
+      </div>
+
+      <h2>Specialization </h2>
+      <div class="flex-row gallery-row ">
+        <section>
+          <a href="gallery images/WEBSITE CONCERT PHOTOS-1186.JPG"  data-lightbox="photos"></a>
+          <div class="img-fluid  container">
+              <img src="gallery images/WEBSITE CONCERT PHOTOS-1186.JPG" 
+              alt="" class="image">
+                <div class="overlay overlayRight">
+                  <div class="imgtext">CONCERTS</div>
+                  <div class="imgtext2">Paul Stanley of KISS performs in concert.</div>
+                </div>
+          </div>
+          <a href="http://www.mismarissa.com" class="caption"><br>EVENT PHOTOGRAPHY</a>
+          </a>
+        </section>
+        <section>
+          <a
+            href="gallery images/Chicken Food Waste AD council (Copy).png" 
+            data-lightbox="photos" ></a>
+            <div class="img-fluid  container">
+                <img src="gallery images/Chicken Food Waste AD council (Copy).png" alt="" class="image">
+                  <div class="overlay overlayRight">
+                    <div class="imgtext">WEB / APP DESIGN</div>
+                    <div class="imgtext2">Food Waste/Chicken AD council project.</div>
+                  </div>
+            </div>
+            <a href="http://www.mismarissa.com" class="caption"><br>WEB / APP DESIGN </a>
+
+        
+          </a>
+        </section>
+        <section>
+          <a
+            href="gallery images/house-9946.JPG"  data-lightbox="photos"></a>
+            <div class="img-fluid  container">
+                <img src="gallery images/house-9946.JPG" alt="" class="image">
+                  <div class="overlay overlayRight">
+                    <div class="imgtext">REAL ESTATE</div>
+                    <div class="imgtext2">Exposure Bracketing Photography and Drone.</div>
+                  </div>
+            </div>
+            <a href="http://www.mismarissa.com" class="caption"><br>REAL ESTATE/DRONE</a>
+          </a>
+        </section>
+        <section>
+          <a
+            href="gallery images/AP4A8255.jpg"
+            data-lightbox="photos" ></a>
+            <div class="img-fluid  container">
+                <img src="gallery images/AP4A8255.jpg" alt="" class="image">
+                  <div class="overlay overlayRight">
+                    <div class="imgtext">PROP MAKING</div>
+                    <div class="imgtext2">Holiday Decor and Prop construction</div>
+                  </div>
+            </div>
+            <a href="http://www.mismarissa.com" class="caption"><br>PROP MAKING</a>
+          </a>
+        </section>
+      </div>
+
+
+
+
+      <div id="work-history">
+        <h2>Project & Work History</h2>
+        <div>
+          <h3>PhotoJournalist, MisMarissa (2010-Present)</h3>
+          <p>
+            <img src="images/work-experience-1.png" />
+              <SPAN class=li>Photographed live music, red carpet, keynote, book signings, meet and greets, cosplay, and atmosphere.</SPAN>
+              <SPAN class=li>captured quality images in very challenging fast pace low-light situations for both print and internet use.</SPAN>
+              <SPAN class=li>Covered various events for FOX, FX, LIVE NATION, AEG, NATURAL GEOGRAPHIC CHANNEL, ZUMA PRESS, SOUNDSPIKE, AXS.com, NBC SounDiego, and Examiner.com</SPAN>
+              <SPAN class=li>Edited, toned, captioned, and uploaded photographs for editorial publication.</SPAN>
+              <SPAN class=li>blah blah blah.... etc... skills</SPAN>
+            </P>
+                
+        </div>
+        <div>
+          <h3>PhotoJournalist, AXS.com and Examiner.com (2014-2015)</h3>
+          <p>
+            <img src="images/work-experience-2.png" />  
+              <SPAN class=li>Wrote, edited, and produced stories for multiple platforms, including the Internet and digital channels. </li></ul>
+              <SPAN class=li>Create unique and engaging live music reviews and promotional content for concerts, events, and music industry news using the AP style of writing.
+              <SPAN class=li>Produce, schedule, and post SEO and organic content across a variety of social media.
+              <SPAN class=li>Photographed or located relevant images, videos, and slideshows for content submissions.
+              <SPAN class=li>Pitch article series ideas and writes with style and personality.
+              <SPAN class=li>Thoroughly research every angle meets deadlines, and supply accompanying photographs with articles.
+              <SPAN class=li>blah blah blah.... etc... skills</SPAN>
+          </p>
+        </div>
+        <div>
+          <h3>Project Management / Supply Chain Management </h3>
+          <p>
+            <img src="images/work-experience-3.png" />
+            <SPAN class=li>Accomplished project management and supply chain consultant for various manufacturing firms including Autosplice, Sanyo Energy, Spawar, and Northrup Grumman.
+            <SPAN class=li>Developed comprehensive project plans for a wide variety of activities alongside internal stakeholders and external vendors.
+            <SPAN class=li>Experienced defining scope, milestones, and overall timeline for assigned projects. 
+            <SPAN class=li>Monitor and Communicate project progress,  follow through, and evaluate problems and seek opportunities for improvement. 
+            <SPAN class=li>proactive leader and problem solver. 
+            <SPAN class=li>Schedules and leads team meetings to create and implement project plans.
+            <SPAN class=li>Defines scope, milestones, supporting tasks, and communication plans.
+            <SPAN class=li>Develops and maintains detailed project schedules and documentation, using project management software and Microsoft Office tools.
+            <SPAN class=li>Coordinates with vendors and other external stakeholders; collaborates with people from a variety of functional areas to drive projects to timely completion.
+            <SPAN class=li>Effectively manages the flow of information and communication across all project stakeholders including status updates and key deliverables to ensure deadlines are met.
+            <SPAN class=li>Measures project results against initial objectives, identifies areas for improvement, reports project status and evaluation to leadership.
+            <SPAN class=li>Manages various projects simultaneously with efficiency, speed, and high quality, within strict deadlines.
+            <SPAN class=li>Thrives in a rapid paced, fluid work environment and handle job duties with a sense of urgency.
+            <SPAN class=li>blah blah blah.... etc... skills</SPAN>
+          </p>
+        </div>
+      </div>
+
+      <h2>Technical Skills</h2>
+      <div class="flex-row-skills icons-row">
+        <section>
+          <p><i data-feather="phone"></i></p>
+          
+          <p style="word-wrap: normal; max-width: 250px">
+           LET'S CONNECT!
+          <ul  id="contact-info"><li>name</li><li>email</li><li>phone</li><li>portfolio</li><li>other stuff</li><li>other stuff2</li></ul></p>
+          <img
+            src="images/mismarissa-photo-400x428.jpg"
+            style="max-width: 100px; border-color: #00ff00;"
+          />
+        </section>
+
+        <section>
+          <p><i data-feather="aperture"></i></p>
+          <p style="word-wrap: normal; max-width: 250px">
+            ADOBE CREATIVE SUITE
+            <ul><li>Lightroom</li><li>Photoshop</li><li>Illustrator</li><li>InDesign</li><li>After Effects</li><li>Premiere Pro</li></ul>
+            <p>
+              <a href="https://skillicons.dev">
+                <img src="https://skillicons.dev/icons?i=lr,ps,ai,ae,pr,twitter,linkedin,instagram&perline=4" />
+              </a>
+            </p>
+        </section>
+        <section>
+          <p><i data-feather="camera"></i></p>
+          <p style="word-wrap: normal; max-width: 250px;">
+            WEB DESIGN 
+            <ul><li>Figma</li><li>Adobe XD</li><li>Wordpress</li><li>Mockups</li><li>Prototyping</li><li>Wireframe</li></ul></p>
+
+            <p>
+              <a href="https://skillicons.dev">
+                <img src="https://skillicons.dev/icons?i=figma,xd,wordpress,ae,pr,ai,au,ps&perline=4" />
+              </a>
+            </p>
+        </section>
+        <section>
+          <p><i data-feather="codepen"></i></p>
+          <p style="word-wrap: normal; max-width: 250px">
+            WEB DEVELOPMENT
+            <ul><li>Figma</li><li>Adobe XD</li><li>Wordpress</li><li>Mockups</li><li>Prototyping</li><li>Wireframe</li></ul></p>
+          </p>
+        
+          <p>  <a href="https://skillicons.dev"> <img src="https://skillicons.dev/icons?i=css,html,mysql,py,vscode&perline=4" />  </a>  </p>
+        </section>
+      </div>
+
+      <script>  feather.replace();       </script>
+      <div id="create"> <h1>LET'S CREATE SOMETHING TOGETHER</h1> </div>
+        
+    </div>
+  </body>
+</html>
