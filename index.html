@@ -18,7 +18,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css"
     />
 
-    <style>
+  <style>
       a:link,
       a:visited {
         color: #609100;
@@ -33,6 +33,7 @@
         border-block-end: 5px solid;
         border-image-source: radial-gradient(circle at center, lime, transparent 95% );
         border-image-slice: 3;
+        line-height: 1.6;
         }
 
       h3 {
@@ -96,6 +97,10 @@
         letter-spacing: 0.3em;
       }
 
+      .bottom-row section {
+        max-width: 560px;
+}
+
       .flex-row {
         display: flex;
         flex-flow: row wrap;
@@ -140,7 +145,10 @@
         text-align: center;
       }
 
-      #contact-info {list-style-position: outside; text-align:left; list-style-type: none;}
+      #contact-info {
+        list-style-position: outside;
+        text-align:left;
+        list-style-type: none;}
       
       #create {
         width: 85%;
@@ -152,6 +160,15 @@
         border-image-slice: 3;
       }
 
+      #contact-form{
+        margin: 10px 1%;
+        padding: 13px 33px;
+        background: url(images/contact-background.png);
+        border: #333333 1px solid;
+        border-radius: 13px;
+      }
+
+
       .container {position:relative; width:auto; height:250px; display:inline-block;}
 
       .image {display: block; width:auto; height:250px;}
@@ -160,21 +177,58 @@
 
       .container:hover .overlay {opacity: .7; width: 100%;}
 
-      .imgtext { color:white; font-weight: bold; font-family: Raleway ; position: absolute; top: 30%; left: 50%; transform:translate(-50%, -50%); font-size: 1.3em;}
+      .imgtext {
+        color:white;
+        font-weight: bold;
+        font-family: Raleway ;
+        position: absolute;
+        top: 30%; left: 50%; 
+        transform:translate(-50%, -50%); 
+        font-size: 1.3em;}
 
-      .imgtext2 { color:rgb(28, 8, 75); font-weight: bold; font-family: Raleway ; position: absolute; top: 65%; left: 50%; transform:translate(-50%, -50%); font-size: 1.3em;} 
+      .imgtext2 { 
+        color:rgb(28, 8, 75); 
+        font-weight: bold; 
+        font-family: Raleway ;
+         position: absolute; 
+         top: 65%; left: 50%; 
+         transform:translate(-50%, -50%); 
+         font-size: 1.3em;} 
 
-      .overlayRight{height:0; width: 100%; top: 0; right: 0; background-color: #00ee00;}
+      .overlayRight{
+        height:0; 
+        width: 100%; 
+        top: 0; 
+        right: 0; 
+        background-color: #00ee00;}
 
       .container:hover .overlayRight {height: 100%;}
 
-      SPAN.li  {display: list-item; padding-left: -7em ;}
+      SPAN.li  {display: list-item; padding-left: -8em ;}
         
+      .name-text {
+        text-align: center;
+        font-weight: 700;
+        font-family: Fira Sans;
+        color: limegreen;
+        letter-spacing: 0.2em;
+        font-style: italic;
+        font-size: 1.75em;
+        margin-top: -30px;
+        border-radius: 24px 0px 0px 0px;
+        background-color: #ebebeb;}
 
-
+        .name-text2 {
+        text-align: center;
+        font-weight: 500;
+        font-family: Fira Sans;
+        color: rgb(0, 0, 0);
+        font-size: 1em;
+        margin-top: -5px;
+        background-color: #ebebeb;
+        border-radius: 0px 0px 24px 0px;}
 
     </style>
-
 
 
 
@@ -183,15 +237,18 @@
   <body>
     <div id="main">
       <h1>VISUAL CONTENT - UX/UI - SOCIAL MEDIA MANAGER</h1>
-      <h2>Marissa Carter  - marissa@mismarissa.com</h2>
-
+      <div class="name-text" >Marissa Carter</div>
+      <p class="name-text2">San Diego, California</p>
       <div class="flex-row icons-row">
         <section>
           <img
             src="images/mismarissa-photo-400x428.jpg"
-            style="max-width: 250px; 
-            border-color: #00ff00; 
-            border-radius: 3px;"
+            style="max-width: 250px; margin: 0 auto; background-color: lime;
+        border: 5px solid;
+        border-block-end: 5px solid;
+        border-image-source: radial-gradient(circle at center, lime, transparent 95% );
+        border-image-slice: 1;
+        line-height: 5;" 
           />
         </section>
         <section>
@@ -203,12 +260,12 @@
         <section>
           <p><i data-feather="layout"></i></p>
           <p style="word-wrap: normal; max-width: 250px">
-            I create responsive websites that are fast, easy to use, and beautiful.  I have up-to-date full stack WebDev skills and enjoy pushing the boundries in design.</p>
+            I create beautiful responsive websites that are fast, and easy to use , utlizing up-to-date full stack WebDev and animation skills.</p>
         </section>
         <section>
           <p><i data-feather="phone-call"></i></p>
           <p style="word-wrap: normal; max-width: 250px">
-            Visit my Linkedin profile for more details or contact me here!
+            Visit my <a href="https://www.linkedin.com/in/mismarissa/"  target=" blank" >Linkedin</a> profile for more details or contact me <a href="https://mismarissa.com/about_mismarissa22/"  target=" blank" >here!</a>
           </p>
         </section>
       </div>
@@ -221,29 +278,21 @@
         <h2>Career Highlights</h2>
         <ul>
           <li>
-            Built the <a href="https://www.thriveon.com"  target=" blank" >ThriveOn.com</a>
-            website to client specifications. All server-side code built from scratch using the
-            <a href="https://www.yiiframework.com/" target=" blank" >Yii framework</a> 
-            for PHP. All client-side code built using the  <a href="https://www.reactjs.org/"
-              target=" blank" >React</a> Javascript framework.
+            Awarded Stukent Social Media Marketing "Mimic Social" certification - March 2022
           </li>
           <li>
-            Loren ipsum dolor sit amet, ei graece
-            neglegentur pro. Mucius labore gubergren pri an,
-            et tota legendos mediocrem sit. Corpora
-            sapientem ea has, no dicunt percipitur vis, vim
-            eu soleat phaedrum splendide. In usu clita
-            essent blandit.
-          </li>
-          <li>
-            lorem ipsum dolor sit amet, ei graece
-            neglegentur pro. Mucius labore gubergren pri an,
-            et tota legendos mediocrem sit. Corpora
-            sapientem ea has, no dicunt percipitur vis, vim
-            eu soleat phaedrum splendide. In usu clita
-            essent blandit.
+            FAA Part 107 Remote Pilot Certificate - Small Unmanned Aircraft Systems, September 2022
           </li>
           <li>As a Photographer/ Entertainment PhotoJournalist, I have covered red carpets, live music, and other events for Zuma Press, National Geographic Channels, Live Nation, AXS, FOX Fan Fare, FX, NBC Soundiego, and many smaller outlets.</li>
+          <li>Passionate about all things Music, Photography, Technology, and Design.</li>
+          <li>
+            Built  <a href="https://www.mismarissa.com"  target=" blank" >MisMarissa.com</a>
+            website to client specifications. All pages built from scratch using the
+            <a href="https://www.wordpress.com/" target=" blank" >Wordpress </a> 
+            custom templates. All client-side code built using <a href="https://www.wordpress.com/"
+              target=" blank" >Wordpress</a> User Templates.
+          </li>
+          
         </ul>
       </div>
 
@@ -253,13 +302,13 @@
           <a href="gallery images/WEBSITE CONCERT PHOTOS-1186.JPG"  data-lightbox="photos"></a>
           <div class="img-fluid  container">
               <img src="gallery images/WEBSITE CONCERT PHOTOS-1186.JPG" 
-              alt="" class="image">
+              alt="" class="image"> <a href="https://www.mismarissa.com"  target=" blank" ></a>
                 <div class="overlay overlayRight">
                   <div class="imgtext">CONCERTS</div>
                   <div class="imgtext2">Paul Stanley of KISS performs in concert.</div>
                 </div>
           </div>
-          <a href="http://www.mismarissa.com" class="caption"><br>EVENT PHOTOGRAPHY</a>
+          <a href="https://mismarissa.photo/concert-portfolio" class="caption"><br>EVENT PHOTOGRAPHY</a>
           </a>
         </section>
         <section>
@@ -270,10 +319,10 @@
                 <img src="gallery images/Chicken Food Waste AD council (Copy).png" alt="" class="image">
                   <div class="overlay overlayRight">
                     <div class="imgtext">WEB / APP DESIGN</div>
-                    <div class="imgtext2">Food Waste/Chicken AD council project.</div>
+                    <div class="imgtext2">Food Waste AD Council project.</div>
                   </div>
             </div>
-            <a href="http://www.mismarissa.com" class="caption"><br>WEB / APP DESIGN </a>
+            <a href="https://mismarissa.photo/graphicdesign" class="caption"><br>WEB / APP DESIGN </a>
 
         
           </a>
@@ -288,7 +337,7 @@
                     <div class="imgtext2">Exposure Bracketing Photography and Drone.</div>
                   </div>
             </div>
-            <a href="http://www.mismarissa.com" class="caption"><br>REAL ESTATE/DRONE</a>
+            <a href="https://mismarissa.photo/venue" class="caption"><br>REAL ESTATE/DRONE</a>
           </a>
         </section>
         <section>
@@ -302,7 +351,7 @@
                     <div class="imgtext2">Holiday Decor and Prop construction</div>
                   </div>
             </div>
-            <a href="http://www.mismarissa.com" class="caption"><br>PROP MAKING</a>
+            <a href="https://www.instagram.com/p/CkaO7SOgi-z/" class="caption"><br>PROP MAKING</a>
           </a>
         </section>
       </div>
@@ -321,6 +370,9 @@
               <SPAN class=li>Covered various events for FOX, FX, LIVE NATION, AEG, NATURAL GEOGRAPHIC CHANNEL, ZUMA PRESS, SOUNDSPIKE, AXS.com, NBC SounDiego, and Examiner.com</SPAN>
               <SPAN class=li>Edited, toned, captioned, and uploaded photographs for editorial publication.</SPAN>
               <SPAN class=li>blah blah blah.... etc... skills</SPAN>
+              <SPAN class=li>blah blah blah.... etc... skills</SPAN>
+              <SPAN class=li>blah blah blah.... etc... skills</SPAN>
+              <SPAN class=li>blah blah blah.... etc... skills</SPAN>
             </P>
                 
         </div>
@@ -328,33 +380,30 @@
           <h3>PhotoJournalist, AXS.com and Examiner.com (2014-2015)</h3>
           <p>
             <img src="images/work-experience-2.png" />  
-              <SPAN class=li>Wrote, edited, and produced stories for multiple platforms, including the Internet and digital channels. </li></ul>
-              <SPAN class=li>Create unique and engaging live music reviews and promotional content for concerts, events, and music industry news using the AP style of writing.
-              <SPAN class=li>Produce, schedule, and post SEO and organic content across a variety of social media.
-              <SPAN class=li>Photographed or located relevant images, videos, and slideshows for content submissions.
-              <SPAN class=li>Pitch article series ideas and writes with style and personality.
-              <SPAN class=li>Thoroughly research every angle meets deadlines, and supply accompanying photographs with articles.
-              <SPAN class=li>blah blah blah.... etc... skills</SPAN>
+              <SPAN class=li>Wrote, edited, and produced stories for multiple platforms, including the Internet and digital channels. </SPAN>
+              <SPAN class=li>Create unique and engaging live music reviews and promotional content for concerts, events, and music industry news using AP writing style.
+              <SPAN class=li>Produce, schedule, and post SEO and organic content across a variety of social media. </SPAN>
+              <SPAN class=li>Photographed or located relevant images, videos, and slideshows for content submissions. </SPAN>
+              <SPAN class=li>Pitch article series ideas and writes with style and personality. </SPAN>
+              <SPAN class=li>Thoroughly researched every story angle, meeting deadlines, and supplied accompanying photographs with articles. </SPAN>
+                <SPAN class=li>Top 5 of 121 writers in San Diego first week of Feb 2015 - Examiner.com </SPAN>
+                <SPAN class=li>Top 20 of 646 Music writers across the US - first week Feb 2015 - Examiner.com </SPAN>
+                <SPAN class=li>3 featured articles in 6 months on AXS.com</SPAN>
           </p>
         </div>
         <div>
           <h3>Project Management / Supply Chain Management </h3>
           <p>
-            <img src="images/work-experience-3.png" />
-            <SPAN class=li>Accomplished project management and supply chain consultant for various manufacturing firms including Autosplice, Sanyo Energy, Spawar, and Northrup Grumman.
-            <SPAN class=li>Developed comprehensive project plans for a wide variety of activities alongside internal stakeholders and external vendors.
-            <SPAN class=li>Experienced defining scope, milestones, and overall timeline for assigned projects. 
-            <SPAN class=li>Monitor and Communicate project progress,  follow through, and evaluate problems and seek opportunities for improvement. 
-            <SPAN class=li>proactive leader and problem solver. 
-            <SPAN class=li>Schedules and leads team meetings to create and implement project plans.
-            <SPAN class=li>Defines scope, milestones, supporting tasks, and communication plans.
-            <SPAN class=li>Develops and maintains detailed project schedules and documentation, using project management software and Microsoft Office tools.
-            <SPAN class=li>Coordinates with vendors and other external stakeholders; collaborates with people from a variety of functional areas to drive projects to timely completion.
-            <SPAN class=li>Effectively manages the flow of information and communication across all project stakeholders including status updates and key deliverables to ensure deadlines are met.
-            <SPAN class=li>Measures project results against initial objectives, identifies areas for improvement, reports project status and evaluation to leadership.
-            <SPAN class=li>Manages various projects simultaneously with efficiency, speed, and high quality, within strict deadlines.
-            <SPAN class=li>Thrives in a rapid paced, fluid work environment and handle job duties with a sense of urgency.
-            <SPAN class=li>blah blah blah.... etc... skills</SPAN>
+            <img src="images/work-experience-3.png"/>
+            <SPAN class=li>Previous Project Management and Supply Chain Consultant for various companies: Autosplice, Sanyo Energy, Spawar, and Northrup Grumman.</SPAN>
+            <SPAN class=li>Developed comprehensive project plans for a wide variety of activities alongside internal stakeholders and external vendors. Manages various projects simultaneously with efficiency, speed, and high quality, within strict deadlines. </SPAN>
+            <SPAN class=li>Experienced defining scope, milestones, and overall timeline for assigned projects. </SPAN>
+            <SPAN class=li>Monitor and Communicate project progress, follow through, and evaluate problems and seek opportunities for improvement.  Measures project results against initial objectives, identifies areas for improvement, reports project status and evaluation to leadership.</SPAN>
+            <SPAN class=li>Proactive leader and problem solver. Thrives in a rapid paced, fluid work environment and handle job duties with a sense of urgency. </SPAN>
+            <SPAN class=li>Schedules and leads team meetings to create and implement project plans. Effectively manages the flow of information and communication across all project stakeholders including status updates and key deliverables</SPAN>
+            <SPAN class=li>Develop and maintain detailed project documentation - define scope, milestones, supporting tasks, and communication plans. </SPAN>
+
+
           </p>
         </div>
       </div>
@@ -364,12 +413,12 @@
         <section>
           <p><i data-feather="phone"></i></p>
           
-          <p style="word-wrap: normal; max-width: 250px">
+          <p style="word-wrap: normal; max-width: 300px">
            LET'S CONNECT!
-          <ul  id="contact-info"><li>name</li><li>email</li><li>phone</li><li>portfolio</li><li>other stuff</li><li>other stuff2</li></ul></p>
+          <ul  id="contact-info"><li> </li><li>Email Here</li><li>619-858-0858</li><li>www.mismarissa.com</li><li>www.mismarissa.photo</li><li>San Diego, California</li></ul></p>
           <img
             src="images/mismarissa-photo-400x428.jpg"
-            style="max-width: 100px; border-color: #00ff00;"
+            style="max-width: 125px; border-color: #00ff00;"
           />
         </section>
 
@@ -380,7 +429,7 @@
             <ul><li>Lightroom</li><li>Photoshop</li><li>Illustrator</li><li>InDesign</li><li>After Effects</li><li>Premiere Pro</li></ul>
             <p>
               <a href="https://skillicons.dev">
-                <img src="https://skillicons.dev/icons?i=lr,ps,ai,ae,pr,twitter,linkedin,instagram&perline=4" />
+                <img src="https://skillicons.dev/icons?i=github,ps,ai,ae,pr,twitter,linkedin,instagram&perline=4" />
               </a>
             </p>
         </section>
@@ -403,7 +452,58 @@
             <ul><li>Figma</li><li>Adobe XD</li><li>Wordpress</li><li>Mockups</li><li>Prototyping</li><li>Wireframe</li></ul></p>
           </p>
         
-          <p>  <a href="https://skillicons.dev"> <img src="https://skillicons.dev/icons?i=css,html,mysql,py,vscode&perline=4" />  </a>  </p>
+          <p>  <a href="https://skillicons.dev"> <img src="https://skillicons.dev/icons?i=css,html,mysql,py,vscode,codepen,github&perline=4" />  </a>  </p>
+        </section>
+      </div>
+
+      <div class="flex-row-skills bottom-row">
+        <section>
+          <h2>Contact</h2>
+          <div id="contact-form">
+
+            <form action="https://one-small-planet.us/CSIS/resources/contact.php" method="post">
+              <p style="padding:20px; font-style: italic; font-size:110%">Please Contact me with any project or career proposals you'd like to discuss!"</p>
+            
+              <table>
+                <tr>
+                  <td>Name:</td>
+                  <td><input required name="name" type="text"  size="36" max length="34"></td>
+                </tr>
+                <tr>
+                  <td>Email:</td>
+                  <td><input required name="email" type="email"  size="36" max length="44"></td>
+                </tr>
+                <tr>
+                  <td>Phone:</td>
+                  <td><input required name="phone" type="tel"  size="36" max length="24"></td>
+                </tr>
+                <tr>
+                  <td>Type:</td>
+                  <td>
+                    <select id="project" name="project">
+                      <option value="full-time">Full Time</option>
+                      <option value="part-time">Part Time</option>
+                      <option value="contract">Contract</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Notes:</td>
+                  <td>
+                    <textarea required name="notes" cols="36" rows="6"></textarea><br>
+                  </td>
+                </tr>
+              </table>
+
+              <p><input type="submit" value='Send'> </p>
+            </form>
+          </div> 
+        </section>
+        <section>
+          <h2>Video</h2>
+            <p> Video introducing yourself, your career objectives and portfolio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis temporibus consectetur non voluptatum, magni at quia numquam magnam voluptas accusamus, officiis quas nobis, est exercitationem id veritatis doloribus expedita commodi?</p>
+            <p><iframe src="https://www.youtube.com/embed/pX0on42jHmw" frameborder="0" width="100%" height="320" allowfullscreen></iframe></p>
+
         </section>
       </div>
 
